@@ -3,8 +3,9 @@
   "version": "0.0.2",
   "description": "Astro plugin to transpile inline scripts using Babel",
   "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alex-rogov/astro-babel-inline-scripts.git"
   },
   "keywords": [
     "astro",
