@@ -15,5 +15,14 @@
     "html"
   ],
   "author": "Alex Rogov",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.22.11",
+    "astro": "^2.10.14",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.7"
+  }
 }
