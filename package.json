@@ -1,0 +1,19 @@
+{
+  "name": "astro-babel-inline-scripts",
+  "version": "0.0.1",
+  "description": "Astro plugin to transpile inline scripts using Babel",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "astro",
+    "babel",
+    "inline",
+    "scripts",
+    "transpile",
+    "html"
+  ],
+  "author": "Alex Rogov",
+  "license": "MIT"
+}
