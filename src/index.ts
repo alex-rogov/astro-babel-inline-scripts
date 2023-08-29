@@ -1,1 +1,1 @@
-export { default as astroBabelInlineScripts } from "./astro-babel-inline-scripts";
+export { default as babelInlineScripts } from "./babel-inline-scripts";

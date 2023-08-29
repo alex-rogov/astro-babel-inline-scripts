@@ -1,1 +1,1 @@
-export * from "./src";
+export { babelInlineScripts as default } from "./src";
