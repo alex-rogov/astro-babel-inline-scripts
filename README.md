@@ -59,6 +59,47 @@ export default {
 };
 ```
 
+#### You can disable processing per a route.
+
+> Callback takes a route name as a parameter. Route names come from `src/pages` folder.
+>
+> E.g. `src/pages/contact-us/index.astro` turns to `/contact-us` route
+>
+> and `src/pages/contact-us/form.astro` turns to `/contact-us/form` route
+
+**`astro.config.ts`**
+
+```ts
+import babelInlineScripts from "astro-babel-inline-scripts";
+
+export default {
+  integrations: [
+    babelInlineScripts(
+      {
+        presets: [
+          [
+            "@babel/env",
+            {
+              targets: {
+                browsers: ["> .5% or last 2 versions"],
+              },
+            },
+          ],
+        ],
+      },
+      (route) => {
+        // Disable processing for index page.
+        if (route === "/") {
+          return false;
+        }
+
+        return true;
+      }
+    ),
+  ],
+};
+```
+
 [Babel]: https://babeljs.io/docs/usage
 
 ## Changelog
