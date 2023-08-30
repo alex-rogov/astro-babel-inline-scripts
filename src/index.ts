@@ -1,1 +1,3 @@
-export { default as babelInlineScripts } from "./babel-inline-scripts";
+import babelInlineScripts from "./babel-inline-scripts.js";
+
+export default babelInlineScripts;

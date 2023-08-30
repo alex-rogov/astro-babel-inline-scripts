@@ -1,3 +1,9 @@
+## 0.1.0
+
+- Add optional callback to allow disabling processing per a route
+- Compile using TypeScript
+- Refactor the entry file of plugin
+
 ## 0.0.3
 
 - Change export to default
