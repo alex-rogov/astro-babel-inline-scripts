@@ -2,7 +2,9 @@
   "name": "astro-babel-inline-scripts",
   "version": "0.0.3",
   "description": "Astro plugin to transpile inline scripts using Babel",
-  "main": "index.ts",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/@types/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/alex-rogov/astro-babel-inline-scripts.git"
@@ -17,13 +19,17 @@
   ],
   "author": "Alex Rogov",
   "license": "MIT",
-  "dependencies": {
-    "@babel/core": "^7.22.11",
-    "astro": "^2.10.14",
-    "fs": "^0.0.1-security"
+  "files": [
+    "lib/**/*",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -r lib; tsc"
   },
   "devDependencies": {
     "@types/node": "^20.5.7",
-    "node": "^20.5.1"
+    "astro": "^3.0.0",
+    "typescript": "^5.2.2"
   }
 }
