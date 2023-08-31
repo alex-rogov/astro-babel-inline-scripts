@@ -24,7 +24,6 @@ const hook: HookAstroBuildDoneProps =
       const scriptsBodies: Array<string> = [];
       const transpiledScriptsBodies: Array<string> = [];
 
-      let modifiedFileContent = fileContent;
       const scripts = extractScriptTags(fileContent);
       if (!scripts) {
         return;
@@ -45,13 +44,13 @@ const hook: HookAstroBuildDoneProps =
         transpiledScriptsBodies.push(transpiledScript);
       });
 
-      modifiedFileContent = injectTranspiledScripts(
+      const injectedFileContent = injectTranspiledScripts(
         fileContent,
         scriptsBodies,
         transpiledScriptsBodies
       );
 
-      writeFileToUrl(modifiedFileContent, HTMLURL);
+      writeFileToUrl(injectedFileContent, HTMLURL);
     });
   };
 
