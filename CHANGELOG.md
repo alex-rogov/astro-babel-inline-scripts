@@ -1,4 +1,8 @@
-## 0.1.0
+## 1.0.1
+
+- Minor code refactoring
+
+## 1.0.0
 
 - Add optional callback to allow disabling processing per a route
 - Compile using TypeScript
